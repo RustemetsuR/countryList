@@ -1,0 +1,34 @@
+.country-item-list{
+    padding: 10px 5px;
+    position: relative;
+    background: white;
+}
+
+.country-name-item-list{
+    margin: 0 30px;
+    display: inline-block;
+    border-bottom: 2px solid black;
+    width: 75%;
+}
+
+.country-flag-item-list{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 30px;
+    border-bottom-right-radius: 3px;
+}
+
+.country-item-list:hover{
+    background: rgb(180,180,180);
+    transition: ease-in 0.3s;
+}
+
+.country-item-list:hover
+.country-flag-item-list{
+    display: block;
+    transition: ease-in 0.3s;
+    top: 25%;
+    left: 3px;
+}
